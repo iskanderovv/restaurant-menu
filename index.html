@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <h2 class="menu__title">Restaurant Menu</h2>
+        <form action="#" class="menu__form" id="menu__form">
+            <input type="text" class="menu-form__input" id="menu-form__food" placeholder="Add food...">
+            <input type="text" class="menu-form__input" id="menu-form__price" placeholder="Enter price...">
+            <button type="submit" class="menu-form__button" id="menu-form__button">Add Food</button>
+        </form>
+        <div class="menu__search">
+            <input type="text" class="menu-search" placeholder="Search Foods...">
+        </div>
+        <div class="menu__filter-sort">
+            <div class="menu__filter">
+                <label for="filter" class="menu-filter__label">Filter</label>
+                <input id="filter-cheap" type="text" placeholder="from">
+                <input id="filter-expensive" type="text" placeholder="to">
+            </div>
+            <select class="menu__sort">
+                <option disabled selected>Sort</option>
+                <option value="a-z">A-Z</option>
+                <option value="z-a">Z-A</option>
+                <option value="arzon">Ascending</option>
+                <option value="qimmat">Descending</option>
+            </select>
+        </div>
+        <ul class="menu__list" id="menu__list"></ul>
+    </div>
+
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
